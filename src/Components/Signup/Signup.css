@@ -42,6 +42,10 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: fit-content;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .m_two input{
@@ -72,7 +76,8 @@
 
 .isAdmin{
     width: 30%;
-    height: 100%;
+    height: fit-content;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +91,8 @@
 
 .isAdmin1{
     width: 30%;
-    height: 100%;
+    height: fit-content;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +120,8 @@
 .isContributor{
     width: 30%;
     background-color: #2B50AA;
-    height: 100%;
+    height: fit-content;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +135,8 @@
 
 .isContributor1{
     width: 30%;
-    height: 100%;
+    height: fit-content;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;

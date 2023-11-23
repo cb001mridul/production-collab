@@ -1,11 +1,12 @@
 import React from 'react'
 import './Main_Container1.css'
+import img from '../../assets/img/img3.jpg'
 
 function Main_Container1() {
   return (
     <div class="main_container1">
             <div class="container1_banner">
-            <img src="src/assets/img/img3.jpg" alt="" />
+            <img src={img} alt="" />
             </div>
             <div class="container1_text">
                 <h2>Collaborate , <span>Compete</span> and <span id="span2">Groww</span></h2>

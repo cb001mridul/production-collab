@@ -80,7 +80,7 @@ header{
     padding-right: 3rem;
 
     border-radius: 10px;
-    border: none;
+    border: 1px solid var(--primary-eigth);
     color: var(--primary-one);
     background-color: var(--primary-eigth);
     font-size: 1rem;
@@ -103,7 +103,7 @@ header{
     margin-left: 1.5rem;
 
     border-radius: 10px;
-    border: none;
+    border: 1px solid var(--primary-eigth);
     color: var(--primary-one);
     background-color: var(--primary-eigth);
     font-size: 1rem;
