@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+
+
+.main_signup{
+    height: 90vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: flex;
+}
+
+
+.m_one{
+    width: 60%;
+    background-image: url('../../assets/img/spic11.jpg');
+    background-size: cover;
+}
+
+
+.m_two{
+    width: 40%;
+    background-color: var(--primary-six);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.m_two input{
+    width: 60%;
+    align-self: center;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border: 1px solid var(--primary-seven);
+    font-weight: bold;
+}
+
+.m_two h2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primary-eigth);
+}
+
+
+.options{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    height: 3rem;
+}
+
+.isAdmin{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-eigth);
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-eigth);
+    background: none;
+}
+
+.isAdmin1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-one);
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-eigth);
+    background-color: var(--primary-eigth);
+}
+
+.isAdmin:hover{
+    background-color: var(--primary-eigth);
+    color: var(--primary-seven);
+    transition: background-color 0.2s ease;
+}
+
+/* .isAdmin1:hover {
+    background-color: var(--primary-six);
+    color: var(--primary-eigth);
+    transition: background-color 0.2s ease;
+} */
+
+
+.isContributor{
+    width: 30%;
+    background-color: #2B50AA;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-eigth);
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-eigth);
+    background: none;
+}
+
+.isContributor1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-one);
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-eigth);
+    background-color: var(--primary-eigth);
+}
+
+
+.isContributor:hover{
+    background-color: var(--primary-eigth);
+    color: var(--primary-seven);
+    transition: background-color 0.2s ease;
+}
+
+
+.btnnnn{
+    width: 60%;
+    margin-top: 5rem;
+    padding: 0.5rem;
+    background-color: var(--primary-eigth);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+
+/* Add this to your CSS file */
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1670px){
+
+    .main_signup{
+        width: 100%;
+    }
+
+    .m_one{
+        width: 50%;
+    }
+
+    .m_two{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1650px){
+    .m_one{
+        background-image: url('../../assets/img/img1.jpg');
+    }
+}
+
+
+@media (max-width: 1620px){
+
+    .main_signup{
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .m_one{
+        width: 0%;
+        height: 0%;
+    }
+
+}
+
+
+@media (max-width: 1170px){
+    .m_two{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 770px){
+    .m_two{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 690px){
+    .m_two{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 590px){
+    .m_two input{
+        width: 90%;
+    }
+
+    .options{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 418px){
+    .options{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px){
+    .main_signup{
+        height: fit-content;
+    }
+
+    .m_two{
+        height: fit-content;
+    }
+
+    .m_two input{
+        padding: 1rem;
+    }
+
+    .btnnnn{
+        margin-bottom: 2rem;
+    }
+
+    .isContributor{
+        width: 40%;
+    }
+}

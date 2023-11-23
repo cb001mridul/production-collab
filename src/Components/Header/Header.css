@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 7rem;
+    background-color: var(--primary-six);
+}
+
+
+.header_branding{
+    height: 100%;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_branding h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header_navbar{
+    display: flex;
+    height: 100%;
+    width: 80%;
+}
+
+.navbar_ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_ul li{
+    padding: 3rem;
+}
+
+.navbar_ul li a{
+    text-decoration: none;
+    color:var(--primary-eigth);
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar_ul li a:hover{
+    border-bottom: 2px solid var(--primary-eigth);
+}
+
+.navbar_btn{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_login{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-one);
+    background-color: var(--primary-eigth);
+    font-size: 1rem;
+    font-weight: bolder; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_login:hover{
+    background-color: var(--primary-one);
+    color: var(--primary-eigth);
+    border: 1px solid var(--primary-eigth);
+    transition: background-color 0.2s ease;
+}
+
+.btn_signup{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 1.5rem;
+
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-one);
+    background-color: var(--primary-eigth);
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_signup:hover{
+    background-color: var(--primary-one);
+    color: var(--primary-eigth);
+    border: 1px solid var(--primary-eigth);
+    transition: background-color 0.2s ease;
+}
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1270px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .header_branding{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .header_navbar{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .navbar_ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar_ul li{
+        padding: 1.8rem;
+    }
+
+    .navbar_btn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }      
+
+    .btn_signup{
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}

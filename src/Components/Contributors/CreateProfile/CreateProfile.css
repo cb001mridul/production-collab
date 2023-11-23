@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+.cp7{
+    width: 80vw;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-four);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cp7 h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.cp7 input{
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+#desc{
+    padding: 0.5rem;
+    margin-top: 3rem;
+    width: 50%;
+    height: 10rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.cp7_documents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cp7_documents .cp7_fileInput{
+    margin-top: 0;
+}
+
+.cp7_submit{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background: none;
+    color: var(--primary-eigth);
+    border: 1px solid var(--primary-eigth);
+}
+
+
+.cp7_submit:hover{
+    background-color: var(--primary-eigth);
+    color: whitesmoke;
+    transition: background-color 0.2s ease;
+}
+
+/* Addning Media Queries */
+
+@media (max-width: 1438px){
+    .cp7 input{
+        width: 70%;
+    }
+
+    .cp7 #desc{
+        width: 70%;
+    }
+
+    .cp7_documents label{
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .cp7_documents input{
+        align-self: center;
+    }
+
+    .cp7_documents{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 876px){
+    .cp7 input{
+        width: 90%;
+    }
+
+    .cp7 #desc{
+        width: 90%;
+    }
+
+    .cp7_documents{
+        width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    .cp7{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 430px){
+    .cp7{
+        padding: 1rem;
+    }
+
+    .cp7 h2{
+        font-size: 1.5rem;
+    }
+}

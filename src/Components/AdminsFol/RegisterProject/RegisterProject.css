@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+
+.cp9{
+    width: 80vw;
+    margin: auto;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.3rem;
+    background-color: var(--primary-four);
+    border-radius: 10px;
+}
+
+.cp9 input{
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.cp9 #des{
+    height: 10rem;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+
+.cp9_docs{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.cp9_docs_file{
+    padding: 1rem;
+}
+
+.cp9 .cp9_docs_file input{
+    margin-top: 0;
+}
+
+
+.cp9_sub{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: none;
+    border: 1px solid var(--primary-eigth);
+    color: var(--primary-eigth);
+    font-size: 1rem;
+}
+
+
+.cp9_sub:hover{
+    background-color: var(--primary-eigth);
+    color: whitesmoke;
+    transition: background-color 0.2s ease;
+}
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1315px){
+    .cp9 input{
+        width: 70%;
+    }
+
+    .cp9 #des{
+        width: 70%;
+    }
+
+    .cp9_docs{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1015px){
+    .cp9 input{
+        width: 90%;
+    }
+
+    .cp9 #des{
+        width: 90%;
+    }
+
+    .cp9_docs{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 641px){
+    .cp9 input{
+        width: 100%;
+    }
+
+    .cp9 #des{
+        width: 100%;
+    }
+
+    .cp9_docs{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 503px){
+    .cp9{
+        width: 100vw;
+    }
+
+    .cp9 h2{
+        font-size: 1.5rem;
+    }
+
+    .cp9_label{
+        font-size: 1rem;
+        width: 50%;
+    }
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+.main_container1{
+    margin-top: 3rem;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container1_banner{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container1_banner img{
+    height: 100%;
+    width: 80%;
+}
+
+
+.container1_text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-six);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+}
+
+.container1_text .quote1{
+    position: relative;
+    top: -3.5rem;
+    left: 2rem;
+}
+
+.container1_text .quote2{
+    position: relative;
+    top: 3rem;
+    right: 10rem;
+}
+
+.container1_text h2{
+    font-size: 2rem;
+}
+
+.container1_text span{
+    color: var(--primary-five);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.container1_text #span2{
+    color: #00A896;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.container1_text .text_quote{
+    height: 30%;
+    width: 70%;
+    background-color: #373F51;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.9rem;
+    color: var(--primary-four);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 7px 7px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container1_text .text_para{
+    width: 100%;
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--primary-two);
+    width: 73%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1650px){
+
+    .container1_banner{
+        width: 40%;
+    }
+
+    .container1_banner img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .container1_text{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1387px){
+    .main_container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .container1_banner{
+        height: 50%;
+        width: 80%;
+    }
+
+    .container1_banner img{
+        height: 80%;
+        width: 40%;
+    }
+
+    .container1_text{
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    .container1_text .text_quote{
+        height: 10rem;
+    }
+}
+
+
+@media (max-width: 890px){
+    .container1_text .text_quote{
+        font-size: 1.2rem;
+    }
+
+    .container1_text .text_para{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 822px){
+    .container1_text .text_quote{
+        font-size: 1.2rem;
+    }
+
+    .container1_text .text_para{
+        font-size: 1.2rem;
+    }
+
+    .container1_text h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .container1_text span{
+        font-size: 2.1rem;
+    }
+
+    .container1_text #span2{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 580px){
+    .container1_text .text_quote{
+        font-size: 1rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .container1_text .text_para{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 430px){
+
+    .container1_text{
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .container1_text .text_quote{
+        font-size: 0.95rem;
+        font-weight: bolder;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .container1_text .text_para{
+        width: 100%;
+    }
+}
+
+@media (max-width: 391px){
+    .container1_text .text_quote{
+        font-size: 1rem;
+    }
+}

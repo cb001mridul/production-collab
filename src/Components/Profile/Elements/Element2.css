@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+.cp3_main_aboutskills{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cp3_about{
+    width: 60%;
+    padding: 1rem;
+    background-color: var(--primary-six);
+    border-radius: 10px;
+}
+
+.cp3_about h2{
+    font-size: 1.9rem;
+}
+
+.about .about_para{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+
+.cp3_projects{
+    width: 30%;
+    background-color: var(--primary-four);
+    border-radius: 10px;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cp3_projects h2{
+    padding: 1rem;
+    width: 100%;
+}
+
+.cp3_project_one{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cp3_project1_desc{
+    margin-top: 0.5rem;
+}
+
+.cp3_projects h5{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1515px){
+    .cp3_main_aboutskills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cp3_about{
+        width: 80%;
+    }
+
+    .cp3_about h2{
+        font-size: 1.3rem;
+    }
+
+    .cp3_about p{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .cp3_projects{
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 50%;
+    }
+
+    .cp3_projects h2{
+        width: 100%;
+    }
+
+    .cp3_project_one{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 980px){
+    .cp3_about{
+        width:90%
+    }
+
+    .cp3_projects{
+        width: 90%;
+    }
+}
+
+@media (max-width: 795px){
+    .cp3_about{
+        width: 100%;
+    }
+
+    .cp3_projects{
+        width: 100%;
+    }
+
+    .cp3_projects h2{
+        font-size: 1.2rem;
+    }
+
+    .cp3_projects h3{
+        font-size: 1rem;
+    }
+
+    .cp3_projects p{
+        font-size: 0.9rem;
+    }
+}

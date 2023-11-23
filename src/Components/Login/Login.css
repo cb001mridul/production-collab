@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+
+.cp6_main_signup{
+    /* height: 80vh; */
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.cp6_m_two{
+    width: 50%;
+    background-color: var(--primary-six);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.cp6_m_two input{
+    width: 80%;
+    align-self: center;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border: 1px solid var(--primary-seven);
+    font-weight: bold;
+}
+
+.cp6_m_two h2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primary-eigth);
+}
+
+
+/* .isAdmin1:hover {
+    background-color: var(--primary-six);
+    color: var(--primary-eigth);
+    transition: background-color 0.2s ease;
+} */
+
+
+.cp6_btnnnn{
+    width: 80%;
+    margin-top: 5rem;
+    padding: 0.5rem;
+    background-color: var(--primary-eigth);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1580px){
+    .cp6_m_two{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1400px){
+    .cp6_m_two{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px){
+    .cp6_m_two{
+        width: 100%;
+    }
+
+    .cp6_m_two input{
+        width: 100%;
+    }
+
+    .cp6_btnnnn{
+        width:100%;
+    }
+}
+
+
+@media (max-width: 985px){
+    .cp6_main_signup{
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 750px){
+    .cp6_main_signup{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 591px){
+    .cp6_main_signup{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 497px){
+    .cp6_m_two{
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+.main_container2{
+    margin-top: 8rem;
+    height: fit-content;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-six);
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_container2 h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container2_div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.container2_div1 img{
+    height: 350px;
+    width: 350px;
+    border: none;
+}
+
+.container2_div1 p{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 50%;
+    line-height: 2.4rem;
+    background-color: var(--primary-six);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 7px 7px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container2_div2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 2.5rem;
+    padding: 2rem;
+}
+
+.container2_div2 img{
+    height: 350px;
+    width: 350px;
+}
+
+.container2_div2 p{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 50%;
+    line-height: 2.4rem;
+    background-color: var(--primary-six);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 7px 7px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container2_div3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 2.5rem;
+    padding: 2rem;
+}
+
+.container2_div3 img{
+    height: 350px;
+    width: 350px;
+}
+
+.container2_div3 p{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 50%;
+    line-height: 2.4rem;
+    background-color: var(--primary-six);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 7px 7px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Adding Media Queries */
+
+@media (max-width: 1650px){
+    .main_container2{
+        border-radius: 0;
+        width: 100%;
+        margin-top: 11rem;
+    }
+
+    .container2_div1, .container2_div2, .container2_div3{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1387px){
+
+
+    .container2_div1,.container2_div2,.container2_div3{
+        width: 100%;
+        justify-content: space-between;
+        padding: 3.5rem;
+    }
+
+    .container2_div1 p, .container2_div3 p{
+        flex-grow: 1;
+        margin-left: 3rem;
+    }
+
+    .container2_div2 p{
+        flex-grow: 1;
+        margin-right: 3.5rem;
+    }
+
+    .container2_div2, .container2_div3{
+        margin-top: -1.5rem
+    }
+}
+
+
+@media (max-width: 875px){
+    .container2_div1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -1.3rem;
+    }
+
+    .container2_div1 p{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.2rem
+    }
+
+    .container2_div2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -1.3rem;
+    }
+
+    .container2_div2 p{
+        width: 100%;
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+
+    .container2_div3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -1.3rem;
+    }
+
+    .container2_div3 p{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 380px){
+    .main_container2 h2{
+        font-size: 2.5rem;
+    }
+
+    .container2_div1 p, .container2_div2 p, .container2_div3 p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
