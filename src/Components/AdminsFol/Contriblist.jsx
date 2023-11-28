@@ -1,8 +1,38 @@
 import React from 'react'
 import './Contriblist.css'
+import Header from '../Header/Header'
+import { useEffect } from 'react'
 
 function Contriblist() {
+
+  const LogoutChecker = () => {
+    useEffect(() => {
+      const checkAccessToken = () => {
+        const accessToken = getCookie('access_token');
+  
+        if (!accessToken) {
+          console.log('User logged out');
+          window.location.href = '/login';
+        }
+      };
+  
+      const intervalId = setInterval(checkAccessToken, 6);
+  
+      return () => clearInterval(intervalId);
+    }, []);
+  
+    const getCookie = (name) => {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    };
+  }  
+
+  LogoutChecker();
+
   return (
+    <>
+    <Header text1="Other Projects" text2="Team" text3="Profile"/>
     <main className='cp5'>
         <div class="cp5_main_profile">
             <div class="cp5_profile_pic"></div>
@@ -21,6 +51,7 @@ function Contriblist() {
         </div>
 
     </main>
+    </>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
 import './CreateProfile.css'
+import Header from '../../Header/Header'
 
 function CreateProfile() {
   return (
+    <>
+    <Header text1="Home" text2="View Team" text3="Projectsx"/>
     <main className='cp7'>
         <h2>Complete your profile</h2>
         <input type="text" placeholder="name"/>
@@ -24,6 +27,8 @@ function CreateProfile() {
 
         <button class="cp7_submit">Submit</button>
     </main>
+
+    </>
   )
 }
 

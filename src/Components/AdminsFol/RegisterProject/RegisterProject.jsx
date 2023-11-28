@@ -1,8 +1,11 @@
 import React from 'react'
 import './RegisterProject.css'
+import Header from '../../Header/Header'
 
 function RegisterProject() {
   return (
+    <>
+    <Header text1="Projects" text2="Teams" text3="Profile"/>
     <main className='cp9'>
         <h2>Upload Project</h2>
         <input type="text" placeholder="Title"/>
@@ -20,6 +23,8 @@ function RegisterProject() {
 
         <button class="cp9_sub">Submit</button>
     </main>
+
+    </>
   )
 }
 

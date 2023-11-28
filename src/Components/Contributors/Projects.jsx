@@ -1,8 +1,38 @@
 import React from 'react'
 import './Projects.css'
+import Header from '../Header/Header'
+import { useState, useEffect } from 'react'
 
 function Projects() {
+
+  const LogoutChecker = () => {
+    useEffect(() => {
+      const checkAccessToken = () => {
+        const accessToken = getCookie('access_token');
+  
+        if (!accessToken) {
+          console.log('User logged out');
+          window.location.href = '/login';
+        }
+      };
+  
+      const intervalId = setInterval(checkAccessToken, 6);
+  
+      return () => clearInterval(intervalId);
+    }, []);
+  
+    const getCookie = (name) => {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    };
+  }  
+
+  LogoutChecker();
+
   return (
+    <>
+    <Header text1="Admins" text2="Profile" text3="Project-list"/>
     <main className='project_list_card'>
         <div class="card">
             <div class="category_heading"><h4>Category</h4></div>
@@ -19,6 +49,7 @@ function Projects() {
             <button class="card_btn">Read More</button>
         </div>
     </main>
+    </>
   )
 }
 

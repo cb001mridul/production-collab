@@ -20,20 +20,18 @@ function App() {
     <>
     <BrowserRouter>
 
-      <Header/>
-
         <Routes>
 
           <Route path="/" element={<Main />} />
           <Route path="/signup" element={< Signup/>} />
-          {/* <Route path="/projects" element={<Projects/>}></Route>
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/projects" element={<Projects/>}></Route>
           <Route path="/project-descript" element={<Pdescript/>}></Route>
           <Route path="/profile-contributor" element={<ProfileContrib/>}></Route>
           <Route path="/list-contrib" element={<Contriblist/>}></Route>
-          <Route path="/login" element={<Login/>}></Route>
           <Route path="/create-profilec" element={<CreateProfile/>}></Route>
           <Route path="/create-profilea" element={<AdminProf/>}></Route>
-          <Route path="/register-project" element={<RegisterProject/>}></Route> */}
+          <Route path="/register-project" element={<RegisterProject/>}></Route>
           
         </Routes>
         

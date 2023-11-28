@@ -1,8 +1,11 @@
 import React from 'react'
 import './AdminProf.css'
+import Header from '../../Header/Header'
 
 function AdminProf() {
   return (
+    <>
+    <Header text1="Contributors" text2="Teams" text3="Projects"/>
     <main className='cp8'>
         <h2>Complete your profile</h2>
         <input type="text" placeholder="name"/>
@@ -23,6 +26,8 @@ function AdminProf() {
 
         <button class="cp8_submit">Submit</button>
     </main>
+    </>
+
   )
 }
 
